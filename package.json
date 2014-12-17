@@ -20,6 +20,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "find-root": "^0.1.1",
     "through2": "0.6.3"
   }
 }
