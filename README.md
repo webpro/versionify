@@ -8,9 +8,11 @@ By default, it replaces `__VERSION__` with the version from `package.json` in yo
 
 From command line:
 
-    browserify -t versionify
+    browserify -t browserify-versionify
 
 From Node.js:
+
+    var versionify = require('browserify-versionify');
 
     browserify().transform(versionify);
 
