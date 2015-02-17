@@ -12,14 +12,12 @@ From command line:
 
 From Node.js:
 
-    var versionify = require('browserify-versionify');
-
-    browserify().transform(versionify);
+    browserify().transform('browserify-versionify');
 
     // Configure (default values shown)
-    browserify().transform(versionify.configure({
+    browserify().transform('browserify-versionify', {
         placeholder: '__VERSION__',
         version: pkg.version
-    }));
+    });
 
 You can also provide a `filter` property to whitelist files to apply the transform to (e.g. `filter: /\.js$/`).
