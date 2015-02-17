@@ -1,6 +1,6 @@
 {
   "name": "browserify-versionify",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Browserify transform to replace placeholder with package version",
   "keywords": [
     "browserify",
@@ -14,9 +14,9 @@
     "url": "https://github.com/webpro/versionify.git"
   },
   "author": {
-      "name": "Lars Kappert",
-      "email": "lars@webpro.nl",
-      "url": "http://webpro.nl"
+    "name": "Lars Kappert",
+    "email": "lars@webpro.nl",
+    "url": "http://webpro.nl"
   },
   "license": "MIT",
   "dependencies": {
