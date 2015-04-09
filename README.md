@@ -2,12 +2,16 @@
 
 Browserify transform to replace placeholder with package version.
 
-By default, it replaces `__VERSION__` with the version from `package.json` in your source code.
-
-Your code would then read something like this:
+By default, it replaces `__VERSION__` with the version from `package.json` in your source code. E.g. before:
 
 ```js
-var version = '__VERSION__'; // notice the quotes
+var version = '__VERSION__';
+```
+
+after:
+
+```js
+var version = '1.0.0';
 ```
 
 ## Usage
