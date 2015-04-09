@@ -34,7 +34,7 @@ You can also add the transform to your `package.json`:
 {
     "browserify": {
         "transform": [
-            "versionify"
+            "browserify-versionify"
         ]
     }
 }
