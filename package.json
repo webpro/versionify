@@ -1,6 +1,6 @@
 {
   "name": "browserify-versionify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Browserify transform to replace placeholder with package version",
   "keywords": [
     "browserify",
