@@ -5,15 +5,17 @@ var findRoot = require('find-root'),
 function versionify(file, options) {
 
     options = options || {};
-    var filter = options.filter,
-        placeholder = options.placeholder || '__VERSION__',
-        version = options.version ||
-            require(path.join(findRoot(file), 'package.json')).version,
-        re = new RegExp(placeholder, 'g');
+    var filter = options.filter;
 
     if (filter && !filter.test(file)) {
         return through2();
     }
+    
+    var placeholder = options.placeholder || '__VERSION__',
+        re = new RegExp(placeholder, 'g'),
+        version = options.version ||
+            require(path.join(findRoot(file), 'package.json')).version;
+    
     return through2({objectMode: true}, function(chunk, encoding, callback) {
         return callback(null, chunk.toString().replace(re, version));
     });
